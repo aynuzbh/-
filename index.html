@@ -1,6 +1,5 @@
-```html
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,16 +8,12 @@
 </head>
 <body>
     <div id="game-container">
-        <div id="score">分数: 0</div>
-        <div id="level">关卡: 1</div>
-        <div id="game-board"></div>
+        <h1>甲骨文消消乐</h1>
+        <canvas id="gameCanvas"></canvas>
+        <div id="level-indicator">关卡：<span id="current-level">1</span></div>
+        <button id="restart-button">重新开始</button>
     </div>
-
-    <audio id="swapSound" src="sounds/swap.mp3"></audio>
-    <audio id="matchSound" src="sounds/match.mp3"></audio>
-    <audio id="levelUpSound" src="sounds/levelup.mp3"></audio>
 
     <script src="script.js"></script>
 </body>
 </html>
-```
